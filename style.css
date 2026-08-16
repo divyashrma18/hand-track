@@ -1,0 +1,50 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #111;
+  height: 100vh;
+  width: 100vw;
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+}
+
+#stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#webcam {
+  display: none;
+}
+
+#output {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+
+#hud {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  font-size: 14px;
+  pointer-events: none;
+}
+
+#styleLabel {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#hint {
+  opacity: 0.7;
+  font-size: 12px;
+}
